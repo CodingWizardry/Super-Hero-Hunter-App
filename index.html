@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Super Hero Hunter App | Homepage</title>
+		<!-- Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
+		<!-- Favicon -->
+		<link
+			rel="shortcut icon"
+			href="./assets/images/images.jpeg"
+			type="image/x-icon"
+		/>
+		<!-- CSS -->
+		<link rel="stylesheet" href="./assets/css/index.css" />
+		<link rel="stylesheet" href="./assets/css/general.css" />
+		<link rel="stylesheet" href="./assets/css/header.css" />
+		<link rel="stylesheet" href="./assets/css/media-query.css" />
+		<!-- Fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/34162fcf4d.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Scripts -->
+		<script defer src="./assets/js/index/Module.js"></script>
+		<script defer src="./assets/js/index/Script.js"></script>
+	</head>
+	<body>
+		<!-- ---------------------Header--------------------- -->
+		<header class="container-fluid homepage-header">
+			<!-- ---------------------Superhero BG Video 2--------------------- -->
+			<!-- Video 2 -->
+			<video
+				src="./assets/videos/bg-video.mp4"
+				class="headerVideo"
+				muted
+				autoplay
+				loop
+			></video>
+			<!-- ---------------------Navbar--------------------- -->
+			<nav class="navbar navbar-expand container-fluid">
+				<!-- ---------------------Wrapper--------------------- -->
+				<div
+					class="wrapper container-fluid d-flex flex-column justify-content-center align-items-center position-relative"
+					id="wrapper"
+				>
+					<!-- ---------------------Notification Toast--------------------- -->
+					<div
+						class="toast position-absolute"
+						role="alert"
+						aria-live="assertive"
+						aria-atomic="true"
+					>
+						<div class="toast-header">
+							<!-- Name -->
+							<strong class="me-auto text-capitalize"></strong>
+							<!-- Time -->
+							<small>Just Now</small>
+						</div>
+						<!-- Message -->
+						<div class="toast-body text-capitalize">
+							<b></b>
+						</div>
+					</div>
+					<!-- ---------------------Logo--------------------- -->
+					<a class="navbar-brand navbar-expand-lg" href="./index.html">
+						<h1 class="logo">
+							<img
+								src="./assets/images/logo.webp"
+								id="logo-img"
+								alt="Super Hero Icon"
+							/>
+							&nbsp;&nbsp;Super Hero Hunter App
+						</h1>
+					</a>
+					<!-- ---------------------Navbar Menu--------------------- -->
+					<div class="collapse navbar-collapse m-5" id="navbarNav">
+						<ul class="navbar-nav">
+							<!-- Link 1 -->
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									aria-current="page"
+									href="./summonAssistance.html"
+									>Summon Assistance</a
+								>
+							</li>
+							<!-- Link 2 -->
+							<li class="nav-item m-5">
+								<a class="nav-link" href="./superheroquotes-page.html"
+									>Superhero Quotes</a
+								>
+							</li>
+							<!-- Link 3 -->
+							<li class="nav-item">
+								<a class="nav-link" href="./favourites-page.html"
+									>Favourites</a
+								>
+							</li>
+						</ul>
+					</div>
+					<!-- ---------------------Search Form--------------------- -->
+					<form
+						id="search-form"
+						class="d-flex flex-row align-items-start justify-content-evenly form mt-0"
+					>
+						<div class="search-box">
+							<!-- ---------------------Input--------------------- -->
+							<input
+								class="form-control me-2"
+								type="search"
+								placeholder="Search"
+								aria-label="Search"
+								id="search-input"
+								autocomplete="off"
+							/>
+							<!-- ---------------------Suggestions Box--------------------- -->
+							<ul class="autocomplete-box"></ul>
+						</div>
+						<!-- ---------------------Search Button--------------------- -->
+						<a class="btn search-btn" id="search-button"> Search </a>
+					</form>
+				</div>
+			</nav>
+		</header>
+		<!-- ---------------------Superhero BG Video 1--------------------- -->
+		<header class="container-fluid video-header">
+			<!-- Video 1 -->
+			<video
+				src="./assets/videos/bg-video.mp4"
+				class="headerVideo"
+				muted
+				loop
+				autoplay
+			></video>
+		</header>
+		<!-- ---------------------Superhero Showcase--------------------- -->
+		<div class="container-fluid superhero-showcase">
+			<!-- Image 1 -->
+			<section class="img"></section>
+			<!-- Image 2 -->
+			<section class="img"></section>
+			<!-- Image 3 -->
+			<section class="img"></section>
+		</div>
+		<!-- ---------------------Superhero BG Video 4--------------------- -->
+		<header class="container-fluid video-header">
+			<!-- Video 4 -->
+			<video
+				src="./assets/videos/bg-video.mp4"
+				class="headerVideo"
+				muted
+				loop
+				autoplay
+			></video>
+		</header>
+		<!-- ---------------------Superhero Card--------------------- -->
+		<div class="container-fluid superhero-card">
+			<!-- Card 1 -->
+			<div class="card drStrange">
+				<div class="description strange">
+					<h3>Doctor Strange</h3>
+					<br class="br" />
+					<p>
+						As a Master of the Mystic Arts, Doctor Strange possesses
+						incredible magical knowledge and power, able to conjure
+						powerful spells within moments.
+					</p>
+				</div>
+				<img
+					src="./assets/images/doctorstrange.png"
+					alt="Super Hero Card"
+				/>
+			</div>
+		</div>
+		<!-- ---------------------Superhero Card--------------------- -->
+		<div class="container-fluid superhero-card">
+			<!-- Card 2 -->
+			<div class="card spiderman">
+				<div class="description">
+					<h3>SpiderMan</h3>
+					<br class="br" />
+					<p>
+						With amazing spider-like abilities, teenage science whiz Peter
+						Parker fights crime and dreams of becoming an Avenger as
+						Spider-Man.
+					</p>
+				</div>
+				<img src="./assets/images/spiderman2.png" alt="Super Hero Card" />
+			</div>
+		</div>
+		<!-- ---------------------Superhero BG Video 5--------------------- -->
+		<header class="container-fluid video-header">
+			<!-- Video 5 -->
+			<video
+				src="./assets/videos/bg-video.mp4"
+				class="headerVideo"
+				muted
+				loop
+				autoplay
+			></video>
+		</header>
+		<!-- ---------------------Superhero BG Video 6--------------------- -->
+		<header class="container-fluid video-header">
+			<!-- Video 6 -->
+			<video
+				src="./assets/videos/bg-video.mp4"
+				class="headerVideo"
+				muted
+				loop
+				autoplay
+			></video>
+		</header>
+		<!-- ---------------------Footer--------------------- -->
+		<footer class="container-fluid">
+			<!-- ---------------------Superhero BG Video 3--------------------- -->
+			<!-- ---------------------Video--------------------- -->
+			<video
+				src="./assets/videos/bg-video.mp4"
+				class="footerVideo"
+				muted
+				autoplay
+				loop
+			></video>
+			<!-- ---------------------Message--------------------- -->
+			<h1 id="footer-h1">
+				Made with <strong>&#10084;</strong> in <b>INDIA</b> by
+				<b>AYUSH KANDURI</b>
+			</h1>
+			<!-- ---------------------Links--------------------- -->
+			<div class="links">
+				<a id="contact" href="mailto:ayush.kanduri@gmail.com">Contact Us</a>
+				&nbsp;|&nbsp;
+				<a id="about" href="#">About Us</a>
+			</div>
+		</footer>
+
+		<!-- --------------------------------------------------- -->
+		<!-- ---------------------Templates--------------------- -->
+		<!-- --------------------------------------------------- -->
+
+		<!-- ---------------------Template 1--------------------- -->
+		<div class="template">
+			<ul>
+				<!-- ---------------------Li Template--------------------- -->
+				<li
+					class="d-flex justify-content-between align-items-center list"
+					data-id=""
+					data-image-url=""
+				>
+					<div>
+						<!-- Image -->
+						<img
+							src="./assets/images/search.png"
+							alt=""
+							onerror="this.onerror=null; this.src='./assets/images/search.png'"
+						/>
+						<!-- Name -->
+						<span></span>
+					</div>
+					<!-- Heart Icon -->
+					<i class="fa-solid fa-heart fav-btn"></i>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
