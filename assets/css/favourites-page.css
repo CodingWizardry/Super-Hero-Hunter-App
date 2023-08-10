@@ -1,0 +1,64 @@
+/* -----------------------------Heading----------------------------- */
+h3.favourites {
+	margin-bottom: 5em;
+	text-transform: capitalize;
+	margin-top: -15px;
+	background-color: rgb(22 58 66 / 76%);
+	padding: 0.8rem;
+	border-radius: 7px;
+	font-weight: bold;
+	color: var(--color-primary);
+	word-spacing: 0.08rem;
+	letter-spacing: 0.005rem;
+	font-family: var(--font-poppins);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* -----------------------------Superhero Cards----------------------------- */
+.card {
+	border-color: rgb(22 58 66 / 76%); /* tertiary */
+	background-color: var(--color-tertiary); /* tertiary */
+	overflow: hidden;
+	cursor: pointer;
+}
+.card img {
+	overflow: hidden;
+	z-index: 0;
+	transition: 0.5s;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+	aspect-ratio: 1/1;
+}
+.card img:hover {
+	transform: scale(1.2);
+}
+.card-body {
+	color: var(--color-quaternary); /* quaternary */
+	background-color: var(--color-tertiary); /* tertiary */
+	font-weight: 500;
+	text-shadow: 1px 1px 7px var(--color-primary);
+	z-index: 1;
+}
+.card-title {
+	font-weight: 900;
+	color: var(--color-quaternary); /* quaternary */
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px var(--color-primary);
+}
+.btn {
+	color: var(--color-quaternary);
+	background-color: var(--color-primary);
+}
+.btn:hover {
+	color: var(--color-quaternary);
+}
+/* -----------------------------Search Result Title----------------------------- */
+#search-result-title {
+	word-spacing: 0.2rem;
+	color: var(--color-quaternary);
+}

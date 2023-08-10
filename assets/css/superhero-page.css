@@ -1,0 +1,140 @@
+/* -----------------------------Heading----------------------------- */
+#superhero-display {
+	margin-bottom: 2.5em;
+	color: var(--color-primary);
+	word-spacing: 0.08rem;
+	letter-spacing: 0.01rem;
+	font-family: var(--font-poppins);
+	text-transform: capitalize;
+	margin-top: -20px;
+    background: rgb(22 58 66 / 76%);
+	padding: 1rem;
+	border-radius: 7px;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* -----------------------------Search Result Title----------------------------- */
+#search-result-title {
+	word-spacing: 0.2rem;
+	color: var(--color-quaternary);
+}
+/* -----------------------------Search Results----------------------------- */
+#search-result {
+	background-color: rgb(22 58 66 / 76%);
+	border-radius: 7px;
+	padding: 5%;
+}
+/* -----------------------------Single Cards----------------------------- */
+.single-card {
+	width: 100%;
+}
+.single-card #image {
+	width: 50%;
+	height: 25rem;
+	border-radius: 7%;
+}
+.single-card #image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 7%;
+	object-position: center;
+}
+.single-card #info {
+	width: 100%;
+}
+.single-card #info hr {
+	border-bottom: 3px solid var(--color-quaternary);
+	width: 100%;
+}
+.single-card #info #name {
+	color: var(--color-primary);
+	font-family: var(--font-poppins);
+}
+.single-card #info .fav-btn {
+	font-size: 2.5rem;
+	left: 100%;
+	top: 0.5%;
+	transform: translateX(-100%);
+	color: var(--color-primary);
+	cursor: pointer;
+}
+.single-card #info .fav-btn:hover {
+	color: var(--color-secondary);
+}
+/* -----------------------------Title----------------------------- */
+h4 {
+	font-family: var(--font-poppins);
+	color: var(--color-quaternary);
+	font-weight: 600;
+	background-color: var(--color-primary);
+	padding: 2%;
+	width: max-content;
+	border-radius: 10px;
+}
+/* -----------------------------Data Superhero Template----------------------------- */
+[data-superhero-template] {
+	display: none;
+}
+/* -----------------------------Toast----------------------------- */
+.toast {
+	top: 5%;
+	left: 100%;
+	transform: translateX(-100%);
+	z-index: 100;
+}
+/* -----------------------------Show Class----------------------------- */
+.show {
+	display: initial;
+}
+/* -----------------------------FadeLeft Animation----------------------------- */
+.fadeLeft {
+	animation: fadeLeft 1.2s;
+}
+@keyframes fadeLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-100%);
+	}
+}
+/* -----------------------------Cards----------------------------- */
+.card {
+	border-color: var(--color-primary);
+	background-color: var(--color-primary);
+	overflow: hidden;
+	cursor: pointer;
+}
+.card img {
+	overflow: hidden;
+	z-index: 0;
+	transition: 0.5s;
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	-o-object-position: center;
+	object-position: center;
+	aspect-ratio: 1/1;
+}
+.card img:hover {
+	transform: scale(1.2);
+}
+.card-body {
+	color: var(--color-quaternary);
+	background-color: var(--color-primary);
+	font-weight: 500;
+	text-shadow: 1px 1px 7px var(--color-primary);
+	z-index: 1;
+}
+.card-title {
+	font-weight: 900;
+	color: var(--color-quaternary);
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px var(--color-primary);
+}

@@ -1,0 +1,325 @@
+/* -----------------------------Header----------------------------- */
+header {
+	position: relative;
+	z-index: 2;
+}
+.homepage-header {
+	scroll-snap-align: start;
+}
+/* -----------------------------Video----------------------------- */
+header video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-o-object-fit: cover;
+	opacity: 0.8;
+}
+.video-header {
+	scroll-snap-align: start;
+}
+
+/* -----------------------------Navbar----------------------------- */
+.navbar {
+	z-index: 10;
+	position: relative;
+}
+/* -----------------------------Toast----------------------------- */
+.toast {
+	top: 50%;
+	left: 100%;
+	transform: translateX(-100%);
+	z-index: 100;
+}
+/* -----------------------------Show Class----------------------------- */
+.show {
+	display: initial;
+}ar
+/* -----------------------------FadeLeft Animation----------------------------- */
+.fadeLeft {
+	animation: fadeLeft 1.2s;
+}
+@keyframes fadeLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(0%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-100%);
+	}
+}
+/* -----------------------------Navbar Menu----------------------------- */
+.nav-link {
+	font-weight: 1500;
+}
+.navbar-nav .nav-link:hover {
+	color: white; /* Color on hover */
+  }
+.active:hover{
+	color: #fff;
+}
+/* -----------------------------Search Form----------------------------- */
+#search-form {
+	width: 40%;
+	height: 100%;
+	padding: 2% 2%;
+}
+/* -----------------------------Auto Suggestions----------------------------- */
+.search-box {
+	width: 75%;
+}
+.search-box ul {
+	box-shadow: 0px 1px 5px 3px rgba(255, 255, 255, 0.3);
+	background-color: var(--color-quaternary);
+	border-radius: 5px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border: none;
+	padding: 8px;
+	overflow-y: auto;
+	max-height: 200px;
+	width: 100%;
+	visibility: hidden;
+	z-index: 50;
+}
+.search-box ul::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+}
+.search-box ul li {
+	list-style: none;
+	padding: 10px 12px;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.search-box ul li img {
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	margin-right: 15px;
+	object-fit: cover;
+	-o-object-fit: cover;
+	object-position: center;
+	-o-object-position: center;
+}
+.search-box ul li span {
+	font-family: var(--font-poppins);
+	text-transform: capitalize;
+}
+.search-box ul li .fa-heart:hover {
+	color: var(--color-secondary);
+	cursor: pointer;
+}
+.search-box ul li:hover {
+	background-color: #efefef;
+}
+/* -----------------------------Search Input----------------------------- */
+#search-form input,
+#search-form input:focus {
+	background: transparent;
+	outline: none;
+	border: 1px solid var(--color-quaternary); /* quaternary */
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-radius: 0px;
+	box-shadow: none;
+	color: var(--color-quaternary); /* quaternary */
+	font-family: "Poppins", sans-serif;
+	padding: 8px;
+}
+/* -----------------------------Search Button----------------------------- */
+.search-btn {
+	background-color: var(--color-secondary); /* secondary */
+	color: var(--color-quaternary); /* quaternary */
+	border: none;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	font-family: "Poppins", sans-serif;
+	transition: 0.2s ease-in;
+	box-shadow: none;
+	outline: none;
+}
+.search-btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+/* -----------------------------Superhero Showcase----------------------------- */
+.superhero-showcase {
+	background: var(--color-primary); /* primary */
+	display: flex;
+	position: relative;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	z-index: 10;
+	scroll-snap-align: start;
+}
+.superhero-showcase .img {
+	transition: 1s;
+	flex-grow: 2;
+	position: relative;
+	overflow: hidden;
+	display: flex;
+}
+.superhero-showcase:hover .img {
+	opacity: 0.1;
+}
+.superhero-showcase .img:hover {
+	opacity: 1;
+	flex-grow: 5;
+}
+.superhero-showcase .img:nth-child(1) {
+	background-image: url("../images/spiderman.jpg");
+	background-position: center;
+	background-position-y: -350px;
+	background-position-x: -1500px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+.superhero-showcase .img:nth-child(2) {
+	background-image: url("../images/superman.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+.superhero-showcase .img:nth-child(3) {
+	background-image: url("../images/ironman.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+/* -----------------------------Superhero Cards----------------------------- */
+.superhero-card {
+	background: var(--color-primary); /* primary */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: start;
+	transition: all 0.5s ease-in-out;
+	overflow: hidden;
+}
+.superhero-card .card {
+	margin-top: 7rem;
+	display: flex;
+	height: 400px;
+	position: relative;
+	/* margin: 200px 0px 0px 50px; */
+	background: linear-gradient(
+		135deg,
+		var(--color-secondary),
+		var(--color-tertiary)
+	);
+	width: 650px;
+	align-items: center;
+	border-radius: 20px;
+	justify-content: flex-start;
+	box-shadow: 0px 3px 20px 3px var(--color-tertiary);
+	transition: all 0.5s ease-in-out;
+}
+.superhero-card .card:last-child {
+	margin-bottom: 5rem;
+}
+.superhero-card .card img {
+	position: absolute;
+	right: 50%;
+	bottom: 0%;
+	transition: 0.5s;
+	transform: translateX(50%);
+	height: 350px;
+	transition: all 0.5s ease-in-out;
+}
+.superhero-card .card:hover img {
+	height: 600px;
+	right: 80%;
+	transition: all 0.5s ease-in-out;
+}
+.superhero-card .card .description {
+	position: absolute;
+	transition: 0.5s;
+	width: 50%;
+	right: 20%;
+	top: 20%;
+	opacity: 0;
+	padding: 20px 20px 20px 40px;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+}
+.superhero-card .card .strange {
+	top: 10%;
+}
+.card:hover .description {
+	visibility: visible;
+	right: 0;
+	opacity: 1;
+	color: var(--color-quaternary); /* quaternary */
+}
+.card .description h3 {
+	text-transform: uppercase;
+	color: var(--color-quaternary); /* quaternary */
+	line-height: 1em;
+	font-size: 2.5em;
+}
+/* -----------------------------Footer----------------------------- */
+footer {
+	background: var(--color-primary); /* primary */
+	color: var(--color-quaternary); /* quaternary */
+	padding: 2% 2%;
+	/* font-size: 1.2rem; */
+	text-align: center;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+	z-index: 2;
+	scroll-snap-align: start;
+}
+footer h1 {
+	word-spacing: 0.3rem;
+	z-index: 10;
+	position: relative;
+}
+footer strong,
+footer b {
+	color: var(--color-secondary); /* secondary */
+}
+footer .links a {
+	color: var(--color-quaternary); /* quaternary */
+	text-decoration: none;
+	transition: 0.2s ease-in;
+}
+footer .links a:hover {
+	color: var(--color-tertiary); /* tertiary */
+}
+footer .links {
+	margin-top: 3rem;
+	z-index: 10;
+	position: relative;
+}
+footer video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+}
+/* -----------------------------Templates----------------------------- */
+.template {
+	display: none;
+}

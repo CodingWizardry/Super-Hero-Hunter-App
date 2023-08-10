@@ -1,0 +1,52 @@
+/* -----------------------------Heading----------------------------- */
+h3.quotes {
+	margin-bottom: 4.5em;
+	text-transform: capitalize;
+	margin-top: -15px;
+    background: rgb(22 58 66 / 76%);
+	padding: 0.8rem;
+	border-radius: 7px;
+	font-weight: bold;
+	color: var(--color-primary);
+	word-spacing: 0.08rem;
+	letter-spacing: 0.005rem;
+	font-family: var(--font-poppins);
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* -----------------------------Superhero Quotes Cards----------------------------- */
+.first-card {
+	margin-top: -60px;
+}
+.card {
+	width: 50%;
+	border: none;
+    background: rgb(22 58 66 / 76%);
+}
+.card-header {
+    background: rgb(22 58 66 / 76%);
+	color: var(--color-primary);
+	font-family: var(--font-sansita);
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.card-body {
+    background: #39757759;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+}
+.card-body p {
+	color: var(--color-primary);
+	font-family: var(--font-redhat);
+	text-transform: capitalize;
+	font-weight: 500;
+	font-size: 0.8em;
+}
+cite {
+	font-size: 0.9em;
+	color: var(--color-primary);
+	font-weight: 600;
+}

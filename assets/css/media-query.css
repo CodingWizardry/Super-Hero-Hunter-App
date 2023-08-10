@@ -1,0 +1,201 @@
+/* --------------------------------1000px-------------------------------- */
+@media screen and (max-width: 1000px) {
+	#search-form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.search-box {
+		width: 100%;
+	}
+	#search-form input,
+	#search-form input:focus {
+		width: 100%;
+		margin-top: 0px;
+	}
+	.search-btn {
+		width: 100%;
+		margin-bottom: 100px;
+	}
+}
+/* --------------------------------853px-------------------------------- */
+@media screen and (max-width: 853px) {
+	.single-card {
+		flex-direction: column;
+	}
+	.single-card #image {
+		width: 100%;
+		margin: auto;
+	}
+	.single-card #info {
+		margin-left: 0rem !important;
+		margin-top: 2rem;
+	}
+}
+/* --------------------------------737px-------------------------------- */
+@media screen and (max-width: 737px) {
+	.superhero-card .card {
+		height: 400px;
+		margin: 7rem 0 0 0;
+		margin-left: auto;
+		margin-right: auto;
+		width: 400px;
+	}
+	.superhero-card .card img {
+		left: 50%;
+		transform: translateX(-50%);
+		height: 300px;
+		right: 0;
+	}
+	.superhero-card .card:hover img {
+		height: 350px;
+		bottom: 45%;
+	}
+	.superhero-card .card .description {
+		width: 100%;
+		top: 45%;
+	}
+	.superhero-card .card:nth-of-type(1) {
+		height: 420px;
+	}
+	.superhero-card .card:nth-of-type(1):hover img {
+		height: 365px;
+		bottom: 52%;
+	}
+	.br {
+		display: none;
+	}
+}
+/* --------------------------------628px-------------------------------- */
+@media screen and (max-width: 628px) {
+	h1 {
+		font-size: 1.5rem;
+	}
+	.helper-card {
+		width: 100%;
+	}
+	.quote-card {
+		width: 100%;
+	}
+	.single-card #info .fav-btn {
+		font-size: 1.5rem;
+		left: 100%;
+		top: 0.1%;
+	}
+}
+/* --------------------------------482px-------------------------------- */
+@media screen and (max-width: 482px) {
+	.single-card #image {
+		height: 15rem;
+	}
+	@keyframes ripple {
+		100% {
+			transform: scale(1.3);
+			opacity: 0;
+		}
+	}
+	h1.logo {
+		font-size: 1rem;
+	}
+	header #logo-img {
+		width: 5rem;
+		height: 5rem;
+	}
+	.nav-link,
+	.nav-link:visited,
+	.nav-link:link,
+	.nav-link:active {
+		color: var(--color-tertiary);
+		font-family: "Poppins", sans-serif;
+		font-size: 0.7rem;
+		letter-spacing: 0.05rem;
+		word-spacing: 0.02rem;
+		transition: 0.2s ease-in;
+		width: 100%;
+		font-weight: bolder;
+	}
+	.navbar-nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	.superhero-card .card {
+		height: 500px;
+		width: 250px;
+		margin: 7rem 0 0 0;
+		font-size: 0.9rem;
+	}
+	.superhero-card .card img {
+		height: 250px;
+		width: 250px;
+	}
+	.drStrange img {
+		height: 270px !important;
+		width: 340px !important;
+		bottom: 68% !important;
+	}
+	.drStrange h3 {
+		font-size: 2rem !important;
+	}
+	.drStrange .description {
+		width: 100% !important;
+		top: 40% !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+		right: 0% !important;
+		font-size: 0.9rem !important;
+		color: white !important;
+	}
+	.spiderman h3 {
+		font-size: 2rem !important;
+	}
+	.spiderman img {
+		height: 330px !important;
+		width: 390px !important;
+		bottom: 58% !important;
+		left: 70% !important;
+	}
+	.spiderman .description {
+		width: 100% !important;
+		top: 40% !important;
+		visibility: visible !important;
+		opacity: 1 !important;
+		right: 0% !important;
+		font-size: 1rem !important;
+		color: white !important;
+	}
+}
+/* --------------------------------360px-------------------------------- */
+@media screen and (max-width: 360px) {
+	.single-card #image {
+		height: 10rem;
+	}
+	.single-card #info #name {
+		font-size: 1.2rem;
+	}
+	.card-title {
+		font-size: 1.5em;
+	}
+	.btn,
+	.btn:hover,
+	.btn:focus {
+		padding: 10px 10px;
+	}
+	.helper-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.helper-card img {
+		width: 50%;
+		height: auto;
+	}
+	.helper-card h2 {
+		word-break: break-all;
+		font-size: medium;
+	}
+}

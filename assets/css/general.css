@@ -1,0 +1,62 @@
+/* -----------------------------Font Imports----------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Red+Hat+Display:wght@300;400;500&display=swap");
+/* -----------------------------General Styling----------------------------- */
+* {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Sansita Swashed", cursive;
+	font-family: "Poppins", sans-serif;
+	font-family: "Red Hat Display", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(300px);
+	scroll-snap-type: y mandatory;
+}
+/* -----------------------------CSS Variables----------------------------- */
+:root {
+	--color-primary: rgb(0 0 0 / 52%);
+    --color-secondary: rgb(0 0 0);
+    --color-tertiary: rgb(0 0 0);
+    --color-quaternary: #fff;
+    --font-poppins: "Poppins", sans-serif;
+    --font-redhat: "red Hat Display", sans-serif;
+    --font-sansita: "Sansita Swashed", cursive;
+}
+/* -----------------------------Body----------------------------- */
+body::-webkit-scrollbar {
+	display: none;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-y: repeat(300px);
+	scroll-snap-type: y mandatory;
+}
+/* -----------------------------General Styling----------------------------- */
+h2,
+h3,
+h4 {
+	font-family: var(--font-poppins);
+}
+h1 {
+	font-family: var(--font-sansita);
+	font-size: 3rem;
+}
+p,
+a {
+	font-family: var(--font-redhat);
+}
+.hide {
+	display: none;
+}

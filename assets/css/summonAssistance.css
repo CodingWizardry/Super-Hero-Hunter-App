@@ -1,0 +1,139 @@
+/* Heading */
+h3.callforhelp {
+	margin-bottom: 5em;
+	text-transform: capitalize;
+	margin-top: -15px;
+    background: rgb(22 58 66 / 76%);
+	padding: 0.8rem;
+	border-radius: 7px;
+	font-weight: bold;
+	color: #07070752; 
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+ 
+  /* Card */
+  .card {
+	width: 50%;
+    background: rgb(22 58 66 / 76%);
+	border-radius: 10px;
+	margin-top: -60px;
+	position: relative;
+	margin-bottom: 5rem;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form */
+  #exampleFormControlTextarea1 {
+	font-size: 1rem;
+	width: 100%;
+	outline: none;
+    background: rgb(22 58 66 / 76%);
+	font-weight: 500;
+	border: 1px solid #07070752; /* Dark purple */
+	color: #e6e6e6; /* Light gray */
+	border-radius: 10px;
+	padding: 8px;
+  }
+  
+  #exampleFormControlTextarea1:focus {
+	outline: none;
+	border: 1px solid #07070752; /* Dark purple */
+	box-shadow: none;
+  }
+  
+  /* Title */
+  .card-title {
+	font-size: 2em;
+	font-family: 'Sansita', sans-serif;
+	color: #07070752; 
+	font-weight: 600;
+  }
+  
+  .form-label {
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+	color: #07070752; 
+	font-weight: 600;
+  }
+  
+  /* Button */
+  .btn,
+  .btn:hover,
+  .btn:focus {
+	outline: none;
+	color: #e6e6e6; /* Light gray */
+    background:rgb(22 58 66 / 76%);
+	font-weight: 600;
+	letter-spacing: 0.15rem;
+	word-spacing: 0.2rem;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  .btn:focus {
+	outline: none;
+	box-shadow: none;
+  }
+  
+  /* Loading Animation */
+  .loading-superhero {
+	width: 200px;
+	height: 200px;
+    background: linear-gradient(to right, rgba(22, 58, 66, 0.76), rgba(22, 58, 66, 0.76));
+    /* background: linear-gradient(135deg, rgba(47, 42, 99, 0), #f9bcdc); */
+	border-radius: 50%;
+	line-height: 200px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8rem;
+	word-break: break-all;
+	position: relative;
+  }
+  
+  .loading-superhero::before,
+  .loading-superhero::after {
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	border: 5px solid rgb(22 58 66 / 76%);
+	border-radius: 50%;
+	animation: ripple 2s linear infinite;
+  }
+  
+  .loading-superhero::after {
+	animation: ripple 2s 1s linear infinite;
+  }
+  
+  /* Ripple Animation */
+  @keyframes ripple {
+	100% {
+	  transform: scale(2);
+	  opacity: 0;
+	}
+  }
+  
+  /* Success Box Animation */
+  .success {
+	animation: opacity 1s ease-in;
+  }
+  
+  @keyframes opacity {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+  
